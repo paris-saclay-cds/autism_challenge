@@ -88,15 +88,15 @@
                 <center><h3>Structural MRI</h3></center>
                 <ul>
                   <li>Standardized with FSL</li>
-                  <li>Extraction of volume, area, and thickness
-                  information</li>
+                  <li>Gray matter volume, area, and thickness
+                  extracted on different atlases</li>
                 </ul>
               </div>
               <div class="5u 12u$(medium)">
                 <center><h3>Functional MRI</h3></center>
                 <ul>
                   <li>Resting state fMRI</li>
-                  <li>Extraction of time series using different atlases</li>
+                  <li>Time series extracted on different atlases</li>
                 </ul>
               </div>
               <div class="1u 12u$(medium)"><br /></div>
@@ -224,14 +224,22 @@
               motion correction and confounds. Those brain atlases and
               parcellations are:
               <ul>
-                <li>BASC brain parcellations with 64, 122, and 197 regions;</li>
-                <li>Craddock brain parcellations;</li>
-                <li>Harvard-Oxford brain parcellations;</li>
-                <li>MSDL brain atlas;</li>
-                <li>Power brain atlas.</li>
+                <li>BASC parcellations with 64, 122, and 197
+regions (<a href="http://dx.doi.org/10.1016/j.neuroimage.2010.02.082">
+Bellec 2010</a>);</li>
+                <li>Ncuts parcellations (<a
+href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.21333">Craddock
+2012</a>);</li>
+                <li>Harvard-Oxford anatomical parcellations;</li>
+                <li>MSDL functional atlas (<a
+href="http://dx.doi.org/10.1007/978-3-642-22092-0_46">Varoquaux 2011</a>);</li>
+                <li>Power atlas (<a
+href="http://www.cell.com/neuron/fulltext/S0896-6273(11)00792-6">Power
+2011</a>).</li>
               </ul>
-              Refer <a href="http://nilearn.github.io/modules/reference.html#module-nilearn.datasets">Nilearn
-                datasets</a> for more information.
+              The <a href="http://nilearn.github.io/modules/reference.html#module-nilearn.datasets">Nilearn
+                documentation</a> gives more information on the
+parcellations.
             </p>
             <p>
               The time series for each subject are stored in a CSV file. Each
@@ -246,9 +254,8 @@
                 <h3>Multimodal: assembling sMRI and fMRI data together</h3>
 	    </header></center>
             <p>
-              A training set is provided. The training data
-              are stored in a single CSV file,
-              called <code>training.csv</code>.
+	      We provide the training data, stored in a single CSV file,
+              <code>training.csv</code>.
             </p>
             <p>
               It contains anatomical features
@@ -272,7 +279,7 @@
     <section id="four" class="main style2 special">
       <div class="container">
 	<header class="major">
-	  <h2><span class="fa fa-hands-helping"></span>About organizers</h2>
+	  <h2><span class="fa fa-hands-helping"></span>Organizers</h2>
 	</header>
 	<div class="row 150%">
 	  <div class="3u 12u$(medium)">
