@@ -2332,6 +2332,52 @@ input[type="radio"] + label:before {
     width: 100%;
 }
 
+.image.centered {
+    display: block;
+    margin: 0 0 2em 0; }
+
+.image.centered img {
+    margin: 0 auto; }
+
+.image.circled {
+    border-radius: 100%; }
+
+/* Trombinoscope */
+.trombinoscope header {
+    width: 100%; }
+.trombinoscope article {
+    text-align: center;
+    height: 280px; }
+.trombinoscope article > p {
+    text-align: center; }
+.trombinoscope > div header h2 {
+    font-size: 1.85em; }
+.trombinoscope .frame {
+    text-align: center; }
+.trombinoscope .circled {
+    border-radius: 100%; }
+.trombinoscope .shadowed {
+    transition: box-shadow ease-in-out .1s;
+    box-shadow: 2px 2px 20px gray; }
+.trombinoscope .shadowed:hover {
+    box-shadow: 8px 8px 20px gray; }
+.trombinoscope .crop {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    display: inline-block; }
+.trombinoscope .crop img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+    object-fit: cover; }
+
 /* List */
 
 ol {
@@ -3418,5 +3464,6 @@ body.is-loading #header:after {
     #footer {
 	padding: 2em 1em 2em 1em ;
     }
+
 
 }
