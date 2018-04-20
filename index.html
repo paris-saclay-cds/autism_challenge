@@ -6,7 +6,7 @@
   -->
 <html>
   <head>
-    <title>Imaging-psychiatry challenge: predicting autism</title>
+    <title>IMPACt - Imaging-psychiatry challenge: predicting autism</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -23,10 +23,11 @@
       <div class="inner">
 	<!-- <span class="icon major fa-cloud"></span> -->
         <img src="images/brain.png">
-        <h1><strong>Imaging-psychiatry challenge: predicting
+        <h1><strong>IMPACt</strong></h1>
+        <h1><strong>IMaging-PsychiAtry Challenge: predicting
         autism</strong></h1>
         <h2>A data challenge on Autism Spectrum Disorder detection</h2>
-        <h3>June 8 & 11, 2018</h3>
+        <h3>July 1, 2018</h3>
         <div id="clockdiv">
           <div>
             <span class="days"></span>
@@ -103,7 +104,7 @@
             </div>
             <div class="row 150%">
               <header class="major">
-                <h3><span class="fa fa-code"></span> Coding framework</h3>
+                <h3><span class="fa fa-code" id="starting_kit"></span> Coding framework</h3>
 	      </header>
               <p>The challenge will be carried out on
                 the <a href="https://ramp.studio"><b>RAMP platform</b></a>. It
@@ -111,12 +112,12 @@
                 using the Python language. To start "hacking", a starting kit
                 is available. It provides a simple working example which can be
                 expanded to more advanced solutions.</p>
-              <div class="5u 12u$(medium)"><br /></div>
+              <div class="5u 5u$(medium)"><br /></div>
               <ul class="actions">
-	        <li><a href="https://github.com/ramp-kits/autism"
-	               class="button special fit">Starting kit</a></li>
+	        <li><a href="https://github.com/ramp-kits/autism" class="button
+	               special fit">Starting kit</a></li>
 	      </ul>
-              <div class="5u 12u$(medium)"><br /></div>
+              <div class="5u 5u$(medium)"><br /></div>
 
             </div>
 	  </div>
@@ -157,22 +158,25 @@
 	      <h2>When?</h2>
 	    </header>
             <p>
-              This challenge is made of 2 phases: (i) on June 8, a RAMP session
-              will take place in which any data scientists from all walk of
-              like are invited; (ii) on June 11, neuroscientists taking part of
-              the Brainhack network are kindly invited to join a second
-              collaborative RAMP session.
+              This challenge is made of 2 phases: (i) a competitive phase up to
+              July 1 in which participants can submit their solutions to
+              the <a href="https://ramp.studio/">RAMP</a> platform. A Q&A
+              session regarding the challenge and technical platform is
+              organized May 14; (ii) a collaborative phase from July 1 to July
+              7. This last day will coincide with the awards ceremony.
             </p>
             <header class="major">
 	      <h2>Where?</h2>
 	    </header>
             <p>
-              <!-- FIXME: Could be Mozilla -->
-	      <!-- The event will be held in Paris at
-	      the <a href="http://icm-institute.org">Brain and Spine Institute
-	      (ICM)</a> within one of the largest European hospitals in Europe:
-	      the Pitié-Salpêtrière hospital. -->
-              Held in Paris somewhere.
+              The events will be organized as follows:
+              <ul>
+                <li>May 14, 2018: <a href="https://goo.gl/maps/NAWuNjBykap">La
+                    Paillasse, 226 rue Saint-Denis, 75002 Paris</a></li>
+                <li>July 6 & 7,
+                2018: <a href="https://goo.gl/maps/CGLn34ZDswT2">Institut
+                Pasteur, 25-28 Rue du Dr Roux, 75015 Paris</a></li>
+              </ul>
 	    </p>
             <header class="major">
 	      <h2>How to join?</h2>
@@ -228,17 +232,18 @@
               motion correction and confounds. Those brain atlases and
               parcellations are:
               <ul>
-                <li>BASC parcellations with 64, 122, and 197
-regions (<a href="http://dx.doi.org/10.1016/j.neuroimage.2010.02.082">
-Bellec 2010</a>);</li>
-                <li>Ncuts parcellations (<a
-href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.21333">Craddock
+                <li>BASC parcellations with 64, 122, and 197 regions
+(<a href="http://dx.doi.org/10.1016/j.neuroimage.2010.02.082">Bellec
+2010</a>);</li>
+                <li>Ncuts parcellations
+(<a href="https://onlinelibrary.wiley.com/doi/full/10.1002/hbm.21333">Craddock
 2012</a>);</li>
                 <li>Harvard-Oxford anatomical parcellations;</li>
-                <li>MSDL functional atlas (<a
-href="http://dx.doi.org/10.1007/978-3-642-22092-0_46">Varoquaux 2011</a>);</li>
-                <li>Power atlas (<a
-href="http://www.cell.com/neuron/fulltext/S0896-6273(11)00792-6">Power
+                <li>MSDL functional atlas
+(<a href="http://dx.doi.org/10.1007/978-3-642-22092-0_46">Varoquaux
+2011</a>);</li>
+                <li>Power atlas
+(<a href="http://www.cell.com/neuron/fulltext/S0896-6273(11)00792-6">Power
 2011</a>).</li>
               </ul>
               The <a href="http://nilearn.github.io/modules/reference.html#module-nilearn.datasets">Nilearn
@@ -258,15 +263,12 @@ parcellations.
                 <h3>Multimodal: assembling sMRI and fMRI data together</h3>
 	    </header></center>
             <p>
-	      We provide the training data, stored in a single CSV file,
-              <code>training.csv</code>.
-            </p>
-            <p>
-              It contains anatomical features
-              and the path to the time series for a specific brain atlas. The
-              time series data are downloaded on the fly by calling
-              <code>download_data.py atlas_name</code>, avoiding the need to
-              download all fMRI data before to start hacking.
+              The data are provided within
+	      the <strong><a href="#starting_kit">starting kit</a></strong>.
+	      The jupyter
+	      notebook <code><a href="http://nbviewer.jupyter.org/github/ramp-kits/autism/blob/master/autism_starting_kit.ipynb">autism_starting_kit.ipynb</code></a>
+	      explain: (i) how to read data, (ii) how design, train, and test a
+	      model, (iii) the integration with the RAMP platform.
             </p>
             <p>
               Refer to
