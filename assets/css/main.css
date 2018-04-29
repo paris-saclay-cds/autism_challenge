@@ -2243,27 +2243,27 @@ input[type="radio"] + label:before {
 }
 
 .icon.style1:before {
-    color: #c3e895;
+    color: #efa75c;
 }
 
 .icon.style2:before {
-    color: #8addaa;
+    color: #c8a773;
 }
 
 .icon.style3:before {
-    color: #6bd4c8;
+    color: #a4a788;
 }
 
 .icon.style4:before {
-    color: #57aed3;
+    color: #77a49f;
 }
 
 .icon.style5:before {
-    color: #4a87d3;
+    color: #53a8be;
 }
 
 .icon.style6:before {
-    color: #6b88e6;
+    color: #4ea4bb;
 }
 
 .icon.major {
